@@ -1,5 +1,5 @@
 import express, { Request, Response, NextFunction } from "express";
-import staff from "../models/Staff";
+import Staff from "../models/Staff";
 import { body, validationResult } from "express-validator";
 
 export const addStaff = [
@@ -18,7 +18,7 @@ export const addStaff = [
         }
 
         const data: any = req.body;
-        const result = await staff.create(data);
+        const result = await Staff.create(data);
         res.status(200).json({
             code: 200,
             message: "OK",
