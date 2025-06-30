@@ -1,11 +1,10 @@
-import express, { Request, Response, NextFunction } from 'express';
 import dotenv from 'dotenv';
+dotenv.config();
+import express, { Request, Response, NextFunction } from 'express';
 import webRoutes from './routes/web';
 import apiRoutes from "./routes/api";
 import {apiKeyMiddleware} from "./middleware/apikey";
 
-
-dotenv.config();
 
 const app = express();
 app.use(express.json());
