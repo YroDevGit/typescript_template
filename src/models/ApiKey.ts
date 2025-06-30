@@ -1,7 +1,6 @@
 import { DataTypes } from 'sequelize';
 import sequelize from '../config/sequelize';
 
-// Define the ApiKey model
 const ApiKey = sequelize.define('ApiKey', {
   apikey: {
     type: DataTypes.STRING,

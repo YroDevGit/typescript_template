@@ -10,7 +10,6 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 
-// Logging Middleware
 app.use(async (req: Request, res: Response, next: NextFunction) => {
   const start = Date.now();
   const now = new Date().toISOString();
@@ -29,7 +28,7 @@ app.use(async (req: Request, res: Response, next: NextFunction) => {
   next();
 });
 
-// Routes
+// Routes here....
 app.use('/', webRoutes); 
 app.use("/api", apiKeyMiddleware, apiRoutes);
 
