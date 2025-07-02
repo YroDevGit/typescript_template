@@ -1,4 +1,4 @@
-import express, { Request, Response, NextFunction } from "express";
+import { Request, Response, NextFunction } from "express";
 import Staff from "../models/Staff";
 import { body, validationResult } from "express-validator";
 

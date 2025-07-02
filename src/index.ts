@@ -4,9 +4,18 @@ import express, { Request, Response, NextFunction } from 'express';
 import webRoutes from './routes/web';
 import apiRoutes from "./routes/api";
 import {apiKeyMiddleware} from "./middleware/apikey";
+import cors from "cors";
 
 
 const app = express();
+
+/*app.use(cors({
+  origin: ["https://yourfrontend.com"],
+  credentials: true,
+}));*/
+
+app.use(cors());
+
 app.use(express.json());
 
 app.use(async (req: Request, res: Response, next: NextFunction) => {
