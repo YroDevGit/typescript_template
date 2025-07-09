@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import ApiKey from '../models/ApiKey';
+import ApiKey from '@/models/ApiKey';
 
 export const apiKeyMiddleware = async (req: Request, res: Response, next: NextFunction):Promise<any> => {
   const clientKey = req.headers['apikey'];

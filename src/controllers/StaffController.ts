@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import Staff from "../models/Staff";
+import Staff from "@/models/Staff";
 import { body, validationResult } from "express-validator";
 
 export const addStaff = [

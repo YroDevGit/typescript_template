@@ -1,5 +1,5 @@
 import DataTypes from "sequelize";
-import sequelize from "../config/sequelize";
+import sequelize from "@/config/sequelize";
 
 const Staff = sequelize.define("Staff",{
     fullname: DataTypes.STRING,

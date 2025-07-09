@@ -1,9 +1,9 @@
 import dotenv from 'dotenv';
 dotenv.config();
 import express, { Request, Response, NextFunction } from 'express';
-import webRoutes from './routes/web';
-import apiRoutes from "./routes/api";
-import {apiKeyMiddleware} from "./middleware/apikey";
+import webRoutes from '@/routes/web';
+import apiRoutes from "@/routes/api";
+import {apiKeyMiddleware} from "@/middleware/apikey";
 import cors from "cors";
 
 
