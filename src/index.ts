@@ -1,3 +1,11 @@
+import {register} from 'tsconfig-paths';
+import * as tsConfig from '../tsconfig.json';
+
+register({
+  baseUrl: tsConfig.compilerOptions.outDir, 
+  paths: tsConfig.compilerOptions.paths,
+});
+
 import dotenv from 'dotenv';
 dotenv.config();
 import express, { Request, Response, NextFunction } from 'express';
