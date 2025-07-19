@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 const MONGO_URI:any = process.env.MONGO_HOST;
 
-const connectDB = async (): Promise<void> => {
+const connectMONGO = async (): Promise<void> => {
   try {
     await mongoose.connect(MONGO_URI, {
       dbName: process.env.MONGO_DBNAME || 'nodejs',
@@ -16,4 +16,4 @@ const connectDB = async (): Promise<void> => {
   }
 };
 
-export default connectDB;
+export default connectMONGO;
