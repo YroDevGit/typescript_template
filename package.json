@@ -1,6 +1,6 @@
 {
   "name": "basixsjs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "dist/index.ts",
   "description": "A simple but powerful Express.js by Tyrone Malocon",
   "scripts": {
@@ -32,8 +32,10 @@
     "nodemon": "^3.1.10",
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",
-    "typescript": "^5.8.3" 
+    "typescript": "^5.8.3"
   },
-  "files": ["dist", "src"]
-  
+  "files": [
+    "dist",
+    "src"
+  ]
 }
