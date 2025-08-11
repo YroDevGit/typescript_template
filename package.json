@@ -1,6 +1,6 @@
 {
-  "name": "basixs",
-  "version": "1.0.1",
+  "name": "basixsjs",
+  "version": "1.0.3",
   "main": "dist/index.ts",
   "description": "A simple but powerful Express.js by Tyrone Malocon",
   "scripts": {
