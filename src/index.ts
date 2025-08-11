@@ -10,7 +10,6 @@ import dotenv from 'dotenv';
 dotenv.config();
 import express, { Request, Response, NextFunction } from 'express';
 import webRoutes from '@/routes/web';
-import apiRoutes from "@/routes/api";
 import {apiKeyMiddleware} from "@/middleware/apikey";
 import cors from "cors";
 
@@ -46,7 +45,6 @@ app.use(async (req: Request, res: Response, next: NextFunction) => {
 
 // Routes here....
 app.use('/', webRoutes); 
-app.use("/api", apiKeyMiddleware, apiRoutes);
 
 
 app.use((req: Request, res: Response) => {
